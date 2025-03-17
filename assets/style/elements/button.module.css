@@ -1,0 +1,63 @@
+
+
+/* Button Styles */
+.button {
+  /* display: block; */
+  text-decoration: none;
+  text-align: center;
+  padding: 0.75rem;
+  font-weight: bold;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-block-start: 1rem !important;
+}
+
+.button:hover {
+  background-color: var(--secondary);
+  box-shadow: none;
+}
+
+.float-button {
+  z-index: 99;
+  border-radius: 50%;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: .001px solid white;
+  width: 3.5rem;
+  height: 3.5rem;
+  box-sizing: border-box;
+  opacity: 75%;
+}
+
+.float-button.transparent-at-top {
+  display: none;
+}
+
+.float-button.transparent-at-top.scrolled {
+  display: flex !important;
+}
+
+.float-button:hover {
+  background-color: var(--secondary);
+  opacity: 100%;
+}
+
+.float-button i.fa-brands::before {
+  font-size: 1.5rem;
+}
+
+.float-button i.fa::before {
+  font-size: 1.25rem;
+}

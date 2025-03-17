@@ -1,0 +1,10 @@
+export { dataHeaderNavigation } from "./navbar.data.js";
+export { dataHeaderBanner } from "./hero.data.js";
+export { dataHeaderCarousel } from "./carousel.data.js";
+export { dataAbout } from "./content-block.data.js";
+export { dataGallery } from "./gallery.data.js";
+export { dataContact } from "./list-content.data.js";
+export { dataTestimonials } from "./card-slider.data.js";
+export { dataService } from "./card-grid.data.js";
+export { dataProduct } from "./catalogue.data.js";
+export { dataFooter } from "./footer.data.js";

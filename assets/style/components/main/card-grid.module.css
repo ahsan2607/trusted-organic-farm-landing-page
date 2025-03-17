@@ -1,0 +1,63 @@
+
+
+/* General Styles for Services Component */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 2rem); /* Three columns */
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card__icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary); /* Icon color */
+}
+
+.service-card__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.service-card__description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (min-width: 769px) {
+  .service-card {
+    width: calc(25% - 2rem); /* Two columns on medium screens */
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .service-card {
+    width: calc(40% - 2rem); /* One column on small screens */
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .service-card {
+    width: 100%; /* Two columns on medium screens */
+  }
+}

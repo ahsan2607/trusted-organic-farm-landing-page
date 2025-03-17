@@ -1,0 +1,94 @@
+/* The outer wrapper */
+.slider-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* The inner container that hides overflowing slides */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* The slider itself, using Flexbox to line up slides horizontally */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Each slide occupies 100% of the slider-container */
+.slide {
+  flex: 0 0 100%;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Quote icon styling */
+.quote-icon {
+  font-size: 3rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Testimonial text styling */
+.text {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Star rating styling */
+.stars {
+  margin: 10px 0;
+  color: #f39c12;
+  font-size: 1.2rem;
+}
+
+/* Author information styling */
+.author-info {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Navigation buttons styling */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--primary);
+  font-size: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: var(--secondary);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}

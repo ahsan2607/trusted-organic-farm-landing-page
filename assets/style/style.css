@@ -1,0 +1,53 @@
+@import "./components/header/navbar.module.css";
+@import "./components/header/carousel.module.css";
+@import "./components/header/hero.module.css";
+@import "./components/main/content-block.module.css";
+@import "./components/main/card-grid.module.css";
+@import "./components/main/catalogue.module.css";
+@import "./components/main/card-slider.module.css";
+@import "./components/main/gallery.module.css";
+@import "./components/main/list-content.module.css";
+@import "./components/footer/footer.module.css";
+@import "./elements/main.module.css";
+@import "./elements/button.module.css";
+@import "./elements/accordion.module.css";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --primary : #2dc737;
+  --secondary : #1da844;
+}
+
+/* Global Styles */
+* {
+  transition: all;
+  font-family: "Cormorant Garamond", serif;
+  transition-duration: 100ms;
+  word-wrap: break-word;
+}
+
+body {
+  margin: 0 !important;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul > li {
+  white-space: inherit;
+}
+
+header {
+  display: inline;
+}
+
+/* Miscellanous Styles */
+.element-with-logo {
+  display: flex;
+  gap: 0.5rem;
+}
+.element-with-logo.center {
+  justify-content: center;
+}

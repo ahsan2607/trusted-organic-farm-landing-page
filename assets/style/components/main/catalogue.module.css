@@ -1,0 +1,116 @@
+
+
+/* Products Rules */
+.products-subsection__title {
+  text-align: center;
+  margin: 0;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(min-content, max-content);
+  gap: 16px;
+}
+
+.products-list-unwrapped {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.products-list__empty-message {
+  text-align: center;
+}
+
+.product-item {
+  border: 1px solid #aaa;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.product-item-unwrapped {
+  scroll-snap-align: start;
+  border: 1px solid #aaa;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(100% / 2 - 32px);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.product-item__content {
+  flex: 1;
+}
+
+.product-item__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.6rem;
+}
+
+.product-item__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0.6rem 0 0;
+}
+
+.product-item__category {
+  font-size: 0.75rem;
+  margin: 0 0 0.4rem;
+}
+
+.product-item__price {
+  font-size: 0.9rem;
+  margin: 0 0 0.6rem;
+}
+
+.product-item__body {
+  font-size: 0.8rem;
+}
+
+.product-item__action {
+  display: flex;
+}
+
+.product-item__external-link {
+  font-size: 0.85rem;
+}
+
+@media screen and (max-width: 375px) {
+  .products-list {
+    grid-template-columns: 1fr !important;
+  }
+  .product-item-unwrapped {
+    flex: 0 0 calc(100% - 36px); /* Show 1 per row */
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .products-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-item-unwrapped {
+    flex: 0 0 calc(100% / 2 - 48px);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .products-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .product-item-unwrapped {
+    flex: 0 0 calc(100% / 4 - 48px); /* 4 per row */
+  }
+}
