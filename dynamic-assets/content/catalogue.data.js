@@ -1,4 +1,4 @@
-import { image } from "./graphic/images.js";
+import { gallery1, gallery2, gallery3, gallery4, image } from "./graphic/images.js";
 
 export const dataProduct = [
   {
@@ -10,7 +10,7 @@ export const dataProduct = [
     desc: "Fresh, crunchy, and naturally grown carrots packed with nutrients.",
     category: "Vegetables",
     featured: false,
-    image: image,
+    image: gallery1,
     link: "https://youtube.com",
   },
   {
@@ -22,7 +22,7 @@ export const dataProduct = [
     desc: "Free-range eggs, rich in protein and omega-3, straight from our farm.",
     category: ["Dairy & Eggs", "Protein"],
     featured: true,
-    image: image,
+    image: gallery2,
     link: "https://youtube.com",
   },
   {
@@ -34,7 +34,7 @@ export const dataProduct = [
     desc: "Juicy, vine-ripened organic tomatoes, perfect for salads and cooking.",
     category: "Vegetables",
     featured: true,
-    image: image,
+    image: gallery3,
     link: "https://youtube.com",
   },
   {
@@ -46,7 +46,7 @@ export const dataProduct = [
     desc: "Pure, unprocessed honey with natural antioxidants and enzymes.",
     category: ["Natural Sweeteners", "Health Products"],
     featured: true,
-    image: image,
+    image: gallery4,
     link: "https://youtube.com",
   },
   {
@@ -58,7 +58,7 @@ export const dataProduct = [
     desc: "Fresh, pesticide-free spinach, rich in vitamins and minerals.",
     category: ["Vegetables", "Leafy Greens"],
     featured: false,
-    image: image,
+    image: gallery1,
     link: "https://youtube.com",
   },
   {
@@ -70,7 +70,7 @@ export const dataProduct = [
     desc: "Freshly baked whole wheat bread made with organic ingredients.",
     category: ["Bakery", "Healthy Snacks"],
     featured: true,
-    image: image,
+    image: gallery2,
     link: "https://youtube.com",
   },
   {
@@ -82,7 +82,7 @@ export const dataProduct = [
     desc: "Nutritious, dairy-free almond milk made from organic almonds.",
     category: ["Dairy Alternatives", "Beverages"],
     featured: false,
-    image: image,
+    image: gallery3,
     link: "https://youtube.com",
   },
   {
@@ -94,7 +94,7 @@ export const dataProduct = [
     desc: "Creamy, nutrient-dense organic avocados perfect for healthy meals.",
     category: ["Fruits", "Superfoods"],
     featured: true,
-    image: image,
+    image: gallery4,
     link: "https://youtube.com",
   },
 ];

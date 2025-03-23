@@ -11,6 +11,10 @@ main {
 main > section {
   width: 100%;
   box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: none;
 }
 
 main > *:first-child {

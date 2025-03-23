@@ -3,6 +3,7 @@ import { appendElement } from "../../assets/script/function/index.js";
 import { Navbar, Carousel, Abouts, Services, Section, MessageForm, Map, FloatButton, Gallery, CardSlider, GallerySlider, Products } from "../../assets/script/component/index.js";
 import { dataHeaderNavigation, dataHeaderCarousel, dataAbout, dataService, dataContact, dataGallery, dataTestimonials, dataProduct } from "../content/index.js";
 import { whatsappIcon } from "../content/graphic/icons.js";
+import { gallery1 } from "../content/graphic/images.js";
 
 MainLayout(
   () => {
@@ -30,8 +31,9 @@ MainLayout(
       verticalScrollable: true,
       withContainer: false,
       withDirectLink: true,
+      displayType: "gallery"
     });
-    const { element, ui } = Section("farm-products", "Our Organic Products", () => elProducts, uiProducts);
+    const { element, ui } = Section("farm-products", "Our Organic Products", () => elProducts, uiProducts, gallery1);
     appendElement("main", element, ui);
   },
   () => {
